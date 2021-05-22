@@ -4,8 +4,8 @@
 
 
 reports/template_format.pdf: reports/template_format.tex
-	cd reports && pdflatex template_format.tex
-	cd reports && pdflatex template_format.tex
+	cd $(<D) && xelatex $(<F)	
+	cd $(<D) && xelatex $(<F)
 
 clean:
 	rm -f reports/*.pdf
