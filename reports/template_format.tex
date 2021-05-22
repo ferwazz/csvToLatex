@@ -1,6 +1,6 @@
 \documentclass[letterpaper,12pt]{article}
-\usepackage[sfdefault]{cabin}
-\usepackage[T1]{fontenc}
+\usepackage{fontspec,lipsum}
+\setmainfont{Poppins}[Path=./fonts/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic]
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,7 +18,6 @@
 \usepackage[pages=some]{background}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
 \input{info.tex}
 
 \backgroundsetup{
@@ -35,9 +34,9 @@ contents={%
 
 \begin{document}
 
-\BgThispage\vspace{15pt}
+\BgThispage
 
-Estimado \firstName \lastName:\\ \vspace{15pt}
+Estimado \firstName \hspace{3pt}\lastName:\\ \vspace{15pt}
 
 
 
